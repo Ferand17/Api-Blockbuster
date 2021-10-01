@@ -24,7 +24,7 @@ class Conection:
     def getSalida(self):
         if self.salida is not None:
             try:
-                return json.dumps(self.salida)
+                return self.salida
             except (Exception) as error:
                 return "Error JSON"
         return "No hay nada"
